@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', displayItems);
 // Event listener for adding a new item
 addItem.addEventListener('click', function(e) {
     e.preventDefault();
-    const val = Input.value;
+    const val = Input.value.trim();
     if (val === '') {
         alert("Please add an item");
         return;
